@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --index: calc(1vw + 1vh);
+    --gutter: 30px;
+    --side-small: 26;
+    --size-big: 36;
+}
+@font-face {
+    font-family: Raleway-ExtraLight;
+    src: url(../fonts/Raleway-ExtraLight.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: Raleway-Light;
+    src: url(../fonts/Raleway-Light.ttf);
+    font-weight: 100;
+}
+body {
+    background-color: black;
+    color: white;
+    font-size: calc(var(--index) *.8 );
+    font-family: Raleway-Light, sans-serif;
+    line-height: 1.6;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
