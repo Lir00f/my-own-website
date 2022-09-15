@@ -54,6 +54,8 @@ body {
 h1, h2, h3, h4 {
     font-weight: 100;
     text-transform: uppercase;
+    width: min-content;
+    line-height: 1;
 }
 .frame h2 {
      text-align: center;
@@ -92,4 +94,42 @@ video.frame-media_right {
 }
 video.frame-media_left {
 	right: calc(var(--size-big) / 2 * var(--index) + var(--gutter));
+}
+.text-right > * {
+    position: relative;
+    left: 18vw;
+}
+.frame h3 {
+    font-size: calc(var(--index) * 3);
+}
+.frame p {
+    max-width: 30vw;
+    margin-top: 5vh;
+}
+.text-left > * {
+    position: relative;
+    right: 18vw;
+}
+h5 {
+    font-weight: 50;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.soundbutton {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+    cursor: pointer;
+    width: 24px;
+    transition: .25s ease;
+}
+.soundbutton.paused {
+    opacity: .25;
+}
+
+.p4 {
+    position: fixed;
+    bottom: 5vh;
+    left: 5vh; 
+    opacity: .25;
 }
